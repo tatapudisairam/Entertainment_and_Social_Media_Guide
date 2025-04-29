@@ -1,0 +1,51 @@
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 55px;
+  }
+  
+  .comment-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border: 1px solid #ccc; 
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+  }
+  
+  .thumbnail {
+    flex: 1; 
+    max-width: 200px; 
+    position: relative; 
+  }
+  
+  .thumbnail img {
+    width: 100%; 
+    border-radius: 5px; 
+  }
+  
+  .duration {
+    position: absolute; 
+    bottom: 10px; 
+    right: 6px; 
+    background: rgba(255, 255, 255, 0.8); 
+    color: rgb(0, 0, 0); 
+    padding: 4px 6px; 
+    border-radius: 10px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); 
+  }
+  
+  .uploaded-at {
+    flex: 2; 
+    text-align: center; 
+  }
+  
+  .comment {
+    flex: 3; 
+    text-align: left; 
+  }
+  

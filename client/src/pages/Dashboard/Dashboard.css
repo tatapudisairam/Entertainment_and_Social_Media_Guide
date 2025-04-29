@@ -1,0 +1,32 @@
+.container {
+    background: #f9f9f9;
+    padding: 20px 1%;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-content {
+    transition: flex-grow 0.5s; 
+    flex-grow: 1; 
+    margin-left: 45px; 
+  }
+  
+  .main-content.smaller {
+    margin-left: 200px; 
+  }
+  
+  .main-content.larger {
+    margin-left: 45px;
+  }
+  
+  

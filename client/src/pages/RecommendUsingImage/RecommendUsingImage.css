@@ -1,0 +1,114 @@
+.recommend-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+    margin-top: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+  
+  .recommend-image h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .recommend-image input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .recommend-image button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .recommend-image button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .recommend-image button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+
+  .duration {
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 4px 5px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .video-list .card {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    position: relative;
+  }
+  
+  .video-list .card:hover {
+    transform: scale(1.014);
+  }
+  
+  .thumbnail-container {
+    position: relative;
+  }
+  
+  .thumbnail-container img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin: 5px 0;
+  }
+  
+  .card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin: 6px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  .error-message {
+    color: red;
+    margin: 20px;
+    font-weight: bold;
+  }
+  
+  .loading-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin-top: 100px;
+  }
+  

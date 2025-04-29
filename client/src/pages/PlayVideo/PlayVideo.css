@@ -1,0 +1,186 @@
+.video-container {
+  display: flex;
+  margin-top: 54px;
+}
+
+.video-player {
+  flex: 2.7;
+  /* Takes 3/4 of the width */
+  margin-right: 20px;
+  /* Space between video and comments */
+}
+
+video {
+  width: 100%;
+  /* Make the video responsive */
+  height: 500px;
+  /* Maintain aspect ratio */
+}
+
+
+.comments-section {
+  flex: 1.3;
+  /* Takes 1/4 of the width */
+  border-left: 2px solid #ccc;
+  /* Border for separation */
+  padding: 20px;
+  /* Space inside the comments section */
+  height: 80vh;
+  /* Fixed height */
+  background-color: #f9f9f9;
+  /* Light background color */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  display: flex;
+  /* Enable flexbox for layout */
+  flex-direction: column;
+  /* Stack children vertically */
+}
+
+.comment-input-container {
+  display: flex;
+  /* Arrange input and button in a row */
+  margin-bottom: 10px;
+  /* Space below the input container */
+}
+
+.comments-list {
+  flex: 1;
+  /* Allow comments to take remaining space */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.comments-section input {
+  flex: 1;
+  /* Allow input to take available width */
+  padding: 10px;
+  /* Padding for input */
+  border: 1px solid #ccc;
+  /* Border color */
+  border-radius: 4px;
+  /* Rounded corners */
+  font-size: 1em;
+  /* Increase font size */
+}
+
+.comments-section button {
+  padding: 10px 15px;
+  /* Button padding */
+  background-color: #007bff;
+  /* Primary color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* No border */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s;
+  /* Smooth transition */
+  margin-left: 10px;
+  /* Space between input and button */
+}
+
+.comments-section button:hover {
+  background-color: #0056b3;
+  /* Darker shade on hover */
+}
+
+/* Additional styling for comments */
+.comment {
+  background-color: #ffffff;
+  /* Comment background color */
+  border: 1px solid #e0e0e0;
+  /* Border around comments */
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 10px;
+  /* Padding inside comments */
+  margin-bottom: 10px;
+  /* Space between comments */
+  transition: background-color 0.3s;
+  /* Smooth background transition */
+}
+
+.comment:hover {
+  background-color: #f1f1f1;
+  /* Highlight on hover */
+}
+
+.comment strong {
+  color: #333;
+  /* Strong color for usernames */
+}
+
+.timestamp {
+  font-size: 0.75em;
+  /* Decrease font size for timestamps */
+  color: black;
+  /* Light gray color for timestamps */
+}
+
+
+/* Like and Dislike Button Styles */
+.video-player button {
+  padding: 10px 15px;
+  /* Button padding */
+  border: 2px solid transparent;
+  /* Default border */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  /* Smooth transition */
+  font-size: 1em;
+  /* Increase font size */
+  margin-right: 10px;
+  /* Space between buttons */
+  margin-top: 10px;
+  background-color: transparent;
+  /* Default transparent background */
+}
+
+/* Like button styles */
+.video-player button:first-of-type {
+  color: #28a745;
+  /* Text color for like */
+  border-color: #28a745;
+  /* Green border when not liked */
+}
+
+.video-player button:first-of-type:hover {
+  background-color: rgba(40, 167, 69, 0.1);
+  /* Light green on hover */
+}
+
+.video-player button:first-of-type.liked {
+  background-color: #28a745;
+  /* Filled green when liked */
+  color: white;
+  /* Text color */
+}
+
+/* Dislike button styles */
+.video-player button:last-of-type {
+  color: #dc3545;
+  /* Text color for dislike */
+  border-color: #dc3545;
+  /* Red border when not disliked */
+}
+
+.video-player button:last-of-type:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+  /* Light red on hover */
+}
+
+.video-player button:last-of-type.disliked {
+  background-color: #dc3545;
+  /* Filled red when disliked */
+  color: white;
+  /* Text color */
+}

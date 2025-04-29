@@ -1,0 +1,125 @@
+.upload-container {
+    background: transparent;
+    padding: 25px;
+    max-width: 60%;
+    margin: 20px auto;
+    border-radius: 15px;
+  }
+  
+  .input, .textarea, .file-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    background: #f9f9f9;
+    resize: none;
+  }
+  .file-input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    background: #f9f9f9;
+  }
+  .input:focus, .textarea:focus, .file-input:focus {
+    border-color: #6c63ff; 
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.6); 
+    outline: none; 
+  }
+  
+  .file-input {
+    position: relative; 
+  }
+  
+  .file-input::file-selector-button {
+    background: #6c63ff; 
+    color: white;
+    border: none; 
+    border-radius: 10px; 
+    padding: 5px 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  .file-input::file-selector-button:hover {
+    background-color: #5a52e2; 
+  }
+  
+  .button {
+    padding: 12px 18px;
+    background-color: #5a52e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  
+  .genre-selection {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .progress-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 100;
+  }
+  
+  .tooltip.visible {
+    opacity: 1;
+  }
+  
+  
+  

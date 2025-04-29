@@ -1,0 +1,98 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgb(0, 7, 61);
+  color: white;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+
+.input-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex: 1; 
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative; 
+  margin-right: 10px; 
+}
+
+.search-container input {
+  padding: 6px 40px 6px 10px; 
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 300px; 
+  transition: border 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.search-container input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+.search-icon {
+  position: absolute; 
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black; 
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+.image-upload-container {
+  display: flex;
+  align-items: center; 
+}
+
+.image-upload-container input[type="file"] {
+  margin-right: 5px;
+  background-color: transparent; 
+  border: none; 
+  color: white; 
+  cursor: pointer; 
+}
+
+.upload-icon {
+  cursor: pointer;
+  font-size: 1.5rem; 
+  color: white; 
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.notification-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 30px; 
+  transition: color 0.3s;
+}
+
+.profile-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .search-container input {
+    width: 200px; 
+  }
+}
