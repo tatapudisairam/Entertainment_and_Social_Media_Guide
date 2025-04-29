@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { useCookies } from 'react-cookie';
 import axios from 'axios';
 
+//import statements
 import Dashboard from './pages/Dashboard/Dashboard';
 import Login from './pages/Login/Login';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
